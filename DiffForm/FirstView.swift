@@ -10,14 +10,14 @@ import SwiftUI
 struct FirstView: View {
     @State private var firstName = ""
     @State private var lastName = ""
-    
+    @State private var birthdate = Date()
     var body: some View {
         NavigationView{
             Form{
                 Section(header: Text("Personal Information")){
                     TextField("first Name", text: $firstName)
                     TextField("last Name", text: $lastName)
-                    DatePicker("BirthdayDate", selection: <#T##Binding<Date>#>)
+                    DatePicker("BirthDate", selection: $birthdate)
                 }
             }
             .navigationTitle("Account")
