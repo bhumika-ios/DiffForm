@@ -12,6 +12,7 @@ struct FirstView: View {
     @State private var lastName = ""
     @State private var birthdate = Date()
     @State private var onNewsLatter = false
+    @State private var numberOfLink = 1
     var body: some View {
         NavigationView{
             Form{
@@ -23,6 +24,9 @@ struct FirstView: View {
                 Section(header:Text("Action")){
                     Toggle("send NewsLatter", isOn: $onNewsLatter)
                         .toggleStyle(SwitchToggleStyle(tint: .red))
+                    Stepper("Number of Link", value:$numberOfLink, in: 1...100)
+                    Text("This video has\(numberOfLink) Liks")
+                    Link("Terms of service", destination: URL(string: "https://www.linkedin.com/in/bhumika-ios-developer/")!)
                 }
             }
             .navigationTitle("Account")
