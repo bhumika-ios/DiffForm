@@ -29,7 +29,7 @@ struct FirstView: View {
                     Link("LinkIn Profile", destination: URL(string: "https://www.linkedin.com/in/bhumika-ios-developer/")!)
                 }
             }
-            .accentColor(.red)
+            
             .navigationTitle("Account")
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing){
@@ -43,10 +43,12 @@ struct FirstView: View {
                 }
             }
         }
+        .accentColor(.red)
     }
     func saveUser(){
         print("user saved")
     }
+      
 }
 
 struct FirstView_Previews: PreviewProvider {
