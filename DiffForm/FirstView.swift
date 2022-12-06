@@ -11,6 +11,7 @@ struct FirstView: View {
     @State private var firstName = ""
     @State private var lastName = ""
     @State private var birthdate = Date()
+    @State private var onNewsLatter = false
     var body: some View {
         NavigationView{
             Form{
@@ -18,6 +19,10 @@ struct FirstView: View {
                     TextField("first Name", text: $firstName)
                     TextField("last Name", text: $lastName)
                     DatePicker("BirthDate", selection: $birthdate)
+                }
+                Section(header:Text("Action")){
+                    Toggle("send NewsLatter", isOn: $onNewsLatter)
+                        .toggleStyle(SwitchToggleStyle(tint: .red))
                 }
             }
             .navigationTitle("Account")
