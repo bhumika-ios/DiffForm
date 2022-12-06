@@ -26,11 +26,26 @@ struct FirstView: View {
                         .toggleStyle(SwitchToggleStyle(tint: .red))
                     Stepper("Number of Link", value:$numberOfLink, in: 1...100)
                     Text("This video has\(numberOfLink) Liks")
-                    Link("Terms of service", destination: URL(string: "https://www.linkedin.com/in/bhumika-ios-developer/")!)
+                    Link("LinkIn Profile", destination: URL(string: "https://www.linkedin.com/in/bhumika-ios-developer/")!)
                 }
             }
+            .accentColor(.red)
             .navigationTitle("Account")
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing){
+                Button{
+                    hideKeyboard()
+                } label: {
+                    
+                        Image(systemName: "keyboard.chevron.compact.down")
+                    }
+                    Button("Save", action: saveUser)
+                }
+            }
         }
+    }
+    func saveUser(){
+        print("user saved")
     }
 }
 
@@ -39,3 +54,10 @@ struct FirstView_Previews: PreviewProvider {
         FirstView()
     }
 }
+#if canImport(UIKit)
+extension View {
+    func hideKeyboard(){
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+#endif
