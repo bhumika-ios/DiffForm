@@ -19,6 +19,9 @@ struct TextFieldFormView: View {
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(Color.gray.opacity(0.25))
                 )
+            Text("Error here")
+                .font(.system(size: 12, weight: .semibold))
+                .foregroundColor(.red)
             
         }
     }
