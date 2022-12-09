@@ -9,7 +9,11 @@ import SwiftUI
 
 struct TextFieldFormView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading){
+            
+            TextField("Placeholder here", text: .constant(""))
+                .frame(maxWidth: .infinity, minHeight: 44, alignment: .center)
+        }
     }
 }
 
