@@ -12,6 +12,7 @@ struct DateFormView: View {
         VStack(alignment: .leading) {
             DatePicker("", selection: .constant(Date()), displayedComponents: [.date])
                .labelsHidden()
+               .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 }
