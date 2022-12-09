@@ -10,6 +10,7 @@
 		AC1D411F294321FF004DF09B /* TextFieldFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D411E294321FF004DF09B /* TextFieldFormView.swift */; };
 		AC1D412129432565004DF09B /* DateFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D412029432565004DF09B /* DateFormView.swift */; };
 		AC1D4123294327A0004DF09B /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D4122294327A0004DF09B /* ButtonFormView.swift */; };
+		AC1D412729432929004DF09B /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D412629432929004DF09B /* FormItem.swift */; };
 		ACBB570C293F558800E6E9B9 /* DiffFormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB570B293F558800E6E9B9 /* DiffFormApp.swift */; };
 		ACBB570E293F558800E6E9B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB570D293F558800E6E9B9 /* ContentView.swift */; };
 		ACBB5710293F558900E6E9B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBB570F293F558900E6E9B9 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		AC1D411E294321FF004DF09B /* TextFieldFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormView.swift; sourceTree = "<group>"; };
 		AC1D412029432565004DF09B /* DateFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormView.swift; sourceTree = "<group>"; };
 		AC1D4122294327A0004DF09B /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
+		AC1D412629432929004DF09B /* FormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
 		ACBB5708293F558800E6E9B9 /* DiffForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBB570B293F558800E6E9B9 /* DiffFormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffFormApp.swift; sourceTree = "<group>"; };
 		ACBB570D293F558800E6E9B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,11 +45,28 @@
 		AC1D411D294321C7004DF09B /* SecondFormwithValidation */ = {
 			isa = PBXGroup;
 			children = (
-				AC1D411E294321FF004DF09B /* TextFieldFormView.swift */,
-				AC1D412029432565004DF09B /* DateFormView.swift */,
-				AC1D4122294327A0004DF09B /* ButtonFormView.swift */,
+				AC1D412529432916004DF09B /* Model */,
+				AC1D412429432909004DF09B /* View */,
 			);
 			path = SecondFormwithValidation;
+			sourceTree = "<group>";
+		};
+		AC1D412429432909004DF09B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC1D4122294327A0004DF09B /* ButtonFormView.swift */,
+				AC1D412029432565004DF09B /* DateFormView.swift */,
+				AC1D411E294321FF004DF09B /* TextFieldFormView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC1D412529432916004DF09B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC1D412629432929004DF09B /* FormItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		ACBB56FF293F558800E6E9B9 = {
@@ -157,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC1D412729432929004DF09B /* FormItem.swift in Sources */,
 				AC1D4123294327A0004DF09B /* ButtonFormView.swift in Sources */,
 				ACBB570E293F558800E6E9B9 /* ContentView.swift in Sources */,
 				ACBB571A293F568F00E6E9B9 /* FirstView.swift in Sources */,
