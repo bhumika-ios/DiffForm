@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import Combine
 
 protocol FormContentBuilder {
     var content: [FormComponent] { get }
 }
 
-final class FormContentBuilderImpl: FormContentBuilder {
+final class FormContentBuilderImpl:ObservableObject, FormContentBuilder {
     private(set) var content:[FormComponent] = [
         TextFormComponent(id: .firstName, placeholder: "First Name"),
         TextFormComponent(id: .lastName, placeholder: "Last Name"),
