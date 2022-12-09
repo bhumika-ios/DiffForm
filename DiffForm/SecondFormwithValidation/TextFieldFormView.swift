@@ -30,6 +30,8 @@ struct TextFieldFormView: View {
 struct TextFieldFormView_Previews: PreviewProvider {
     static var previews: some View {
         TextFieldFormView()
-            .padding(.horizontal)
+            
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
