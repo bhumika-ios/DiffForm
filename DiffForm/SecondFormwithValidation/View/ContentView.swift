@@ -16,7 +16,8 @@ struct ContentView: View {
                 ForEach(contentBuilder.content) { component in
                     switch component{
                     case is TextFormComponent: TextFieldFormView()
-                        
+                    case is DateFormComponent: DateFormView()
+                    case is ButtonFormComponent: ButtonFormView()
                     default:
                         EmptyView()
                     }
