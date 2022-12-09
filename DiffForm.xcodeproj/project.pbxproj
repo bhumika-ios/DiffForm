@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC1D411F294321FF004DF09B /* TextFieldFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D411E294321FF004DF09B /* TextFieldFormView.swift */; };
+		AC1D412129432565004DF09B /* DateFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D412029432565004DF09B /* DateFormView.swift */; };
 		ACBB570C293F558800E6E9B9 /* DiffFormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB570B293F558800E6E9B9 /* DiffFormApp.swift */; };
 		ACBB570E293F558800E6E9B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB570D293F558800E6E9B9 /* ContentView.swift */; };
 		ACBB5710293F558900E6E9B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBB570F293F558900E6E9B9 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		AC1D411E294321FF004DF09B /* TextFieldFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormView.swift; sourceTree = "<group>"; };
+		AC1D412029432565004DF09B /* DateFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormView.swift; sourceTree = "<group>"; };
 		ACBB5708293F558800E6E9B9 /* DiffForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBB570B293F558800E6E9B9 /* DiffFormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffFormApp.swift; sourceTree = "<group>"; };
 		ACBB570D293F558800E6E9B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				AC1D411E294321FF004DF09B /* TextFieldFormView.swift */,
+				AC1D412029432565004DF09B /* DateFormView.swift */,
 			);
 			path = SecondFormwithValidation;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			files = (
 				ACBB570E293F558800E6E9B9 /* ContentView.swift in Sources */,
 				ACBB571A293F568F00E6E9B9 /* FirstView.swift in Sources */,
+				AC1D412129432565004DF09B /* DateFormView.swift in Sources */,
 				AC1D411F294321FF004DF09B /* TextFieldFormView.swift in Sources */,
 				ACBB570C293F558800E6E9B9 /* DiffFormApp.swift in Sources */,
 			);
