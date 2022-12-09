@@ -9,7 +9,10 @@ import SwiftUI
 
 struct DateFormView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            DatePicker("", selection: .constant(Date()), displayedComponents: [.date])
+               .labelsHidden()
+        }
     }
 }
 
