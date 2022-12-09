@@ -13,11 +13,18 @@ struct ContentView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: [GridItem(.flexible(minimum: 44))], spacing: 20){
-                
+                ForEach(contentBuilder.content) { component in
+                    switch component{
+                    case is TextFormComponent: TextFieldFormView()
+                        
+                    default:
+                        EmptyView()
+                    }
+                }
             }
             .padding(.top,100)
         }
-        .padding()
+        .padding(.horizontal)
     }
 }
 
