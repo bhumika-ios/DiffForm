@@ -13,6 +13,10 @@ struct DateFormView: View {
             DatePicker("", selection: .constant(Date()), displayedComponents: [.date])
                .labelsHidden()
                .frame(maxWidth: .infinity, alignment: .leading)
+            
+            Text("Hello world")
+                .font(.system(size: 12, weight: .semibold))
+                .foregroundColor(.red)
         }
     }
 }
