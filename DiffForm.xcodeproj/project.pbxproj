@@ -57,6 +57,7 @@
 		AC1D412429432909004DF09B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ACBB570D293F558800E6E9B9 /* ContentView.swift */,
 				AC1D4122294327A0004DF09B /* ButtonFormView.swift */,
 				AC1D412029432565004DF09B /* DateFormView.swift */,
 				AC1D411E294321FF004DF09B /* TextFieldFormView.swift */,
@@ -102,7 +103,6 @@
 				AC1D411D294321C7004DF09B /* SecondFormwithValidation */,
 				ACBB570B293F558800E6E9B9 /* DiffFormApp.swift */,
 				ACBB5719293F568F00E6E9B9 /* FirstView.swift */,
-				ACBB570D293F558800E6E9B9 /* ContentView.swift */,
 				ACBB570F293F558900E6E9B9 /* Assets.xcassets */,
 				ACBB5711293F558900E6E9B9 /* Preview Content */,
 			);

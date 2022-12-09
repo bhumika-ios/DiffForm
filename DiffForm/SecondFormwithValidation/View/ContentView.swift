@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var contentBuilder = FormContentBuilderImpl()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView {
+            LazyVGrid(columns: [GridItem(.flexible(minimum: 44))], spacing: 20){
+                
+            }
+            .padding(.top,100)
         }
         .padding()
     }
