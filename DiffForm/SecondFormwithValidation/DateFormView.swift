@@ -14,7 +14,7 @@ struct DateFormView: View {
                .labelsHidden()
                .frame(maxWidth: .infinity, alignment: .leading)
             
-            Text("Hello world")
+            Text("Erroe here")
                 .font(.system(size: 12, weight: .semibold))
                 .foregroundColor(.red)
         }
@@ -24,5 +24,7 @@ struct DateFormView: View {
 struct DateFormView_Previews: PreviewProvider {
     static var previews: some View {
         DateFormView()
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
