@@ -13,6 +13,13 @@ struct TextFieldFormView: View {
             
             TextField("Placeholder here", text: .constant(""))
                 .frame(maxWidth: .infinity, minHeight: 44, alignment: .center)
+                .padding(.leading, 5)
+                .keyboardType(.default)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.gray.opacity(0.25))
+                )
+            
         }
     }
 }
