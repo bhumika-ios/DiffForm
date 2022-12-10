@@ -15,7 +15,7 @@ struct DateFormView: View {
                .labelsHidden()
                .frame(maxWidth: .infinity, alignment: .leading)
             
-            Text("Erroe here")
+            Text("Error here")
                 .font(.system(size: 12, weight: .semibold))
                 .foregroundColor(.red)
         }

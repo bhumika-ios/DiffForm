@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TextFieldFormView: View {
+    @EnvironmentObject var contentBuilder: FormContentBuilderImpl
     @State private var text = ""
     @State private var error: ValidationError?
     let component: TextFormComponent
@@ -41,7 +42,7 @@ struct TextFieldFormView: View {
 struct TextFieldFormView_Previews: PreviewProvider {
     static var previews: some View {
         TextFieldFormView(component: .init(id: .firstName, placeholder: ""))
-            
+            .environmentObject(FormContentBuilderImpl())
             .previewLayout(.sizeThatFits)
             .padding()
     }
