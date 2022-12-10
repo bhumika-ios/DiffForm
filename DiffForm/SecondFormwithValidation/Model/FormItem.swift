@@ -13,6 +13,7 @@ import SwiftUI
 protocol FormItem{
     var id: UUID { get }
     var formId: FormField { get }
+    var validations:[ValidationManager] { get }
     var val: Any? { get }
 }
 
@@ -25,12 +26,16 @@ enum FormField{
 }
 
 class FormComponent: FormItem, Identifiable {
+ 
+    
     let id = UUID()
     let formId: FormField
+    var validations: [ValidationManager]
     var val: Any?
     
-    init(_ id: FormField) {
+    init(_ id: FormField, validations: [ValidationManager] = [] ) {
         self.formId = id
+        self.validations = validations
     }
 }
 
