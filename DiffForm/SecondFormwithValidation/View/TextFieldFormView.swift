@@ -14,15 +14,15 @@ struct TextFieldFormView: View {
     var body: some View {
         VStack(alignment: .leading){
             
-            TextField(component.placeholder, text: .constant(""))
+            TextField(component.placeholder, text:$text)
                 .frame(maxWidth: .infinity, minHeight: 44, alignment: .center)
                 .padding(.leading, 5)
                 .keyboardType(.default)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.gray.opacity(0.25))
+                        .stroke(error == nil ? Color.gray.opacity(0.25) : Color.red)
                 )
-            Text("Error here")
+            Text(error?.errorDescription ?? "")
                 .font(.system(size: 12, weight: .semibold))
                 .foregroundColor(.red)
             
