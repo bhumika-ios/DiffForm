@@ -9,4 +9,5 @@ import Foundation
 
 struct RegexFormItem{
     let pattern: String
+    let error: String
 }
