@@ -11,7 +11,7 @@ struct DateFormView: View {
     let component: DateFormComponent
     var body: some View {
         VStack(alignment: .leading) {
-            DatePicker("", selection: .constant(Date()), displayedComponents: [.date])
+            DatePicker("", selection: .constant(Date()), displayedComponents: [component.mode])
                .labelsHidden()
                .frame(maxWidth: .infinity, alignment: .leading)
             
