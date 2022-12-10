@@ -29,6 +29,7 @@ struct TextFieldFormView: View {
             
         }
         .onChange(of: text, perform: { value in
+            contentBuilder.update(text, in: component)
             //perform validation
             error = component
                 .validations
