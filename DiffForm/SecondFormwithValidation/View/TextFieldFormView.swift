@@ -27,6 +27,14 @@ struct TextFieldFormView: View {
                 .foregroundColor(.red)
             
         }
+        .onChange(of: text, perform: { value in
+            //perform validation
+            error = component
+                .validations
+                .compactMap{ $0.validate(text)}
+                    .first
+                
+        })
     }
 }
 
