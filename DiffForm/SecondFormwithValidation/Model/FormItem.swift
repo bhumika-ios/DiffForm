@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 
 protocol FormItem{
@@ -45,8 +46,8 @@ final class TextFormComponent: FormComponent {
 }
 
 final class DateFormComponent: FormComponent{
-    let mode: UIDatePicker.Mode
-    init(id: FormField, mode: UIDatePicker.Mode) {
+    let mode: DatePickerComponents
+    init(id: FormField, mode: DatePickerComponents) {
         self.mode = mode
         super.init(id)
     }

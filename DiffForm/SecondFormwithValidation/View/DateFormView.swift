@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DateFormView: View {
-     
+    let component: DateFormComponent
     var body: some View {
         VStack(alignment: .leading) {
             DatePicker("", selection: .constant(Date()), displayedComponents: [.date])
@@ -24,7 +24,7 @@ struct DateFormView: View {
 
 struct DateFormView_Previews: PreviewProvider {
     static var previews: some View {
-        DateFormView()
+        DateFormView(component: .init(id: .dob, mode: .date))
             .previewLayout(.sizeThatFits)
             .padding()
     }
