@@ -15,7 +15,7 @@ struct ContentView: View {
             LazyVGrid(columns: [GridItem(.flexible(minimum: 44))], spacing: 20){
                 ForEach(contentBuilder.content) { component in
                     switch component{
-                    case is TextFormComponent: TextFieldFormView()
+                    case is TextFormComponent: TextFieldFormView(component: component as! TextFormComponent)
                     case is DateFormComponent: DateFormView()
                     case is ButtonFormComponent: ButtonFormView()
                     default:
