@@ -21,7 +21,16 @@ struct RegexValidationManagerImpl: ValidationManager {
         self.items = items
     }
     func validate(_ val: Any) -> ValidationError? {
-        <#code#>
+        let val = (val as? String) ?? ""
+        
+        for regexItem in items {
+            let regex = try? NSRegularExpression(pattern: regexItem.pattern)
+            let range = NSRange(location: 0, length: val.count)
+            if regex?.firstMatch(in: val,options: [], range: range) == nil {
+                return regexItem.error
+            }
+        }
+        return nil
     }
     
 }
