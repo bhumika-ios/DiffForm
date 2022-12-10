@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ButtonFormView: View {
+    let component: ButtonFormComponent
     var body: some View {
-        Button("Title here") {
+        Button(component.title) {
             
         }
         .frame(maxWidth: .infinity, minHeight: 44, alignment: .center)
@@ -22,7 +23,7 @@ struct ButtonFormView: View {
 
 struct ButtonFormView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonFormView()
+        ButtonFormView(component: .init(id: .submit, title: "Title here"))
             .previewLayout(.sizeThatFits)
             .padding()
     }

@@ -11,7 +11,7 @@ import SwiftUI
 struct DiffFormApp: App {
     var body: some Scene {
         WindowGroup {
-            FirstView()
+            ContentView()
         }
     }
 }

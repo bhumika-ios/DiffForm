@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC035B792944540F00312B5B /* RegexPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC035B782944540F00312B5B /* RegexPatterns.swift */; };
 		AC1D411F294321FF004DF09B /* TextFieldFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D411E294321FF004DF09B /* TextFieldFormView.swift */; };
 		AC1D412129432565004DF09B /* DateFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D412029432565004DF09B /* DateFormView.swift */; };
 		AC1D4123294327A0004DF09B /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D4122294327A0004DF09B /* ButtonFormView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC035B782944540F00312B5B /* RegexPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexPatterns.swift; sourceTree = "<group>"; };
 		AC1D411E294321FF004DF09B /* TextFieldFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormView.swift; sourceTree = "<group>"; };
 		AC1D412029432565004DF09B /* DateFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormView.swift; sourceTree = "<group>"; };
 		AC1D4122294327A0004DF09B /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
@@ -44,9 +46,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC035B76294453D900312B5B /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				AC035B77294453EC00312B5B /* Patterns */,
+			);
+			path = Regex;
+			sourceTree = "<group>";
+		};
+		AC035B77294453EC00312B5B /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				AC035B782944540F00312B5B /* RegexPatterns.swift */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
 		AC1D411D294321C7004DF09B /* SecondFormwithValidation */ = {
 			isa = PBXGroup;
 			children = (
+				AC035B76294453D900312B5B /* Regex */,
 				AC1D412929434B06004DF09B /* Builder */,
 				AC1D412529432916004DF09B /* Model */,
 				AC1D412429432909004DF09B /* View */,
@@ -194,6 +213,7 @@
 				ACBB571A293F568F00E6E9B9 /* FirstView.swift in Sources */,
 				AC1D412129432565004DF09B /* DateFormView.swift in Sources */,
 				AC1D411F294321FF004DF09B /* TextFieldFormView.swift in Sources */,
+				AC035B792944540F00312B5B /* RegexPatterns.swift in Sources */,
 				ACBB570C293F558800E6E9B9 /* DiffFormApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
