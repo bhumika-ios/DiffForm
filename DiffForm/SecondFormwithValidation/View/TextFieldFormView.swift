@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TextFieldFormView: View {
+    @State private var text = ""
+    @State private var error: ValidationError?
     let component: TextFormComponent
     var body: some View {
         VStack(alignment: .leading){
