@@ -52,9 +52,9 @@ final class TextFormComponent: FormComponent {
 
 final class DateFormComponent: FormComponent{
     let mode: DatePickerComponents
-    init(id: FormField, mode: DatePickerComponents) {
+    init(id: FormField, mode: DatePickerComponents, validations: [ValidationManager] = []) {
         self.mode = mode
-        super.init(id)
+        super.init(id, validations: validations)
     }
 }
 
