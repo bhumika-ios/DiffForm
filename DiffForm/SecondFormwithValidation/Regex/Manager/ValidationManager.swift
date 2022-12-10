@@ -34,3 +34,19 @@ struct RegexValidationManagerImpl: ValidationManager {
     }
     
 }
+// Date validator
+
+struct DateValidationManagerImpl: ValidationManager{
+    private let ageLimit: Int = 18
+    
+    func validate(_ val: Any) -> ValidationError? {
+        guard let date = val as? Date else {
+            return ValidationError.custom(message: "Invalid Value Passed")
+        }
+        if let calculatedYr = Calendar.current.dateComponents([.year] , from: date, to: Date()).year,
+           calculatedYr < ageLimit {
+            return ValidationError.custom(message: "User is below the age of 18")
+        }
+        return nil
+    }
+}
