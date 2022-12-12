@@ -13,11 +13,11 @@ struct DateFormView: View {
     let component: DateFormComponent
     var body: some View {
         VStack(alignment: .leading) {
-            DatePicker("", selection: .constant(Date()), displayedComponents: [component.mode])
+            DatePicker("", selection: $selectedDate, displayedComponents: [component.mode])
                .labelsHidden()
                .frame(maxWidth: .infinity, alignment: .leading)
             
-            Text("Error here")
+            Text(error?.errorDescription ?? "")
                 .font(.system(size: 12, weight: .semibold))
                 .foregroundColor(.red)
         }
