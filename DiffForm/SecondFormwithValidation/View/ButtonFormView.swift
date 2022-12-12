@@ -12,9 +12,14 @@ struct ButtonFormView: View {
     
     let component: ButtonFormComponent
     let handler : ButtonActionHandler
+    
+    init(component: ButtonFormComponent, handler: @escaping ButtonFormView.ButtonActionHandler) {
+        self.component = component
+        self.handler = handler
+    }
     var body: some View {
         Button(component.title) {
-            
+            handler(component.formId)
         }
         .frame(maxWidth: .infinity, minHeight: 44, alignment: .center)
         .background(Color.blue)
