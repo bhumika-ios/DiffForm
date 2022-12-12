@@ -22,7 +22,7 @@ struct ContentView: View {
                     case is ButtonFormComponent: ButtonFormView(component: component as! ButtonFormComponent){ id in
                         switch id {
                         case .submit:
-                            break
+                            contentBuilder.validate()
                         default:
                             break
                         }
