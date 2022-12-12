@@ -23,6 +23,7 @@ struct DateFormView: View {
                 .foregroundColor(.red)
         }
         .onChange(of: selectedDate, perform: { value in
+            contentBuilder.update(selectedDate, in: component)
             error = component
                 .validations
                 .compactMap{ $0.validate(selectedDate)}
