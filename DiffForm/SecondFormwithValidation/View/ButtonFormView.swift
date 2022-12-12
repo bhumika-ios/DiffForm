@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ButtonFormView: View {
+    typealias ButtonActionHandler = (_ formId: FormField) -> Void
+    
     let component: ButtonFormComponent
+    let handler : ButtonActionHandler
     var body: some View {
         Button(component.title) {
             
@@ -23,7 +26,7 @@ struct ButtonFormView: View {
 
 struct ButtonFormView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonFormView(component: .init(id: .submit, title: "Title here"))
+        ButtonFormView(component: .init(id: .submit, title: "Title here")){_ in }
             .previewLayout(.sizeThatFits)
             .padding()
     }
