@@ -10,6 +10,7 @@ import Combine
 
 protocol FormContentBuilder {
     var content: [FormComponent] { get }
+    var state: FormState? { get }
     func update(_ val: Any, in component: FormComponent)
 }
 
