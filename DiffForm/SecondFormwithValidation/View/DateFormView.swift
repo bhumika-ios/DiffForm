@@ -21,6 +21,13 @@ struct DateFormView: View {
                 .font(.system(size: 12, weight: .semibold))
                 .foregroundColor(.red)
         }
+        .onChange(of: selectedDate, perform: { value in
+            error = component
+                .validations
+                .compactMap{ $0.validate(selectedDate)}
+                .first
+            
+        })
     }
 }
 
