@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DateFormView: View {
+    @EnvironmentObject var contentBuilder: FormContentBuilderImpl
     @State private var selectedDate = Date()
     @State private var error: ValidationError?
     let component: DateFormComponent
@@ -34,6 +35,7 @@ struct DateFormView: View {
 struct DateFormView_Previews: PreviewProvider {
     static var previews: some View {
         DateFormView(component: .init(id: .dob, mode: .date))
+            .environmentObject(FormContentBuilderImpl())
             .previewLayout(.sizeThatFits)
             .padding()
     }
