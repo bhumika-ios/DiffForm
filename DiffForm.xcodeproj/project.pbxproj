@@ -16,6 +16,7 @@
 		AC1D412729432929004DF09B /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D412629432929004DF09B /* FormItem.swift */; };
 		AC1D412B29434B24004DF09B /* FormContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D412A29434B24004DF09B /* FormContentBuilder.swift */; };
 		ACB27990294481C300D32C15 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2798F294481C300D32C15 /* ValidationManager.swift */; };
+		ACB625EB2946FF3300DB85D8 /* FormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB625EA2946FF3300DB85D8 /* FormState.swift */; };
 		ACBB570C293F558800E6E9B9 /* DiffFormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB570B293F558800E6E9B9 /* DiffFormApp.swift */; };
 		ACBB570E293F558800E6E9B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB570D293F558800E6E9B9 /* ContentView.swift */; };
 		ACBB5710293F558900E6E9B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBB570F293F558900E6E9B9 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		AC1D412629432929004DF09B /* FormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
 		AC1D412A29434B24004DF09B /* FormContentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormContentBuilder.swift; sourceTree = "<group>"; };
 		ACB2798F294481C300D32C15 /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		ACB625EA2946FF3300DB85D8 /* FormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormState.swift; sourceTree = "<group>"; };
 		ACBB5708293F558800E6E9B9 /* DiffForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBB570B293F558800E6E9B9 /* DiffFormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffFormApp.swift; sourceTree = "<group>"; };
 		ACBB570D293F558800E6E9B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		AC1D411D294321C7004DF09B /* SecondFormwithValidation */ = {
 			isa = PBXGroup;
 			children = (
+				ACB625E92946FF1100DB85D8 /* Event */,
 				AC035B76294453D900312B5B /* Regex */,
 				AC1D412929434B06004DF09B /* Builder */,
 				AC1D412529432916004DF09B /* Model */,
@@ -131,6 +134,14 @@
 				ACB2798F294481C300D32C15 /* ValidationManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		ACB625E92946FF1100DB85D8 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				ACB625EA2946FF3300DB85D8 /* FormState.swift */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 		ACBB56FF293F558800E6E9B9 = {
@@ -240,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB27990294481C300D32C15 /* ValidationManager.swift in Sources */,
+				ACB625EB2946FF3300DB85D8 /* FormState.swift in Sources */,
 				AC035B7C2944555000312B5B /* RegexFormItem.swift in Sources */,
 				AC1D412729432929004DF09B /* FormItem.swift in Sources */,
 				AC1D412B29434B24004DF09B /* FormContentBuilder.swift in Sources */,
