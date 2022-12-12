@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DateFormView: View {
+    @State private var selectedDate = Date()
+    @State private var error: ValidationError?
     let component: DateFormComponent
     var body: some View {
         VStack(alignment: .leading) {
