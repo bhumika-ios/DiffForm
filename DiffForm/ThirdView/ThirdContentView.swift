@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ThirdContentView: View {
+    @ObservedObject var viewM = ViewModel()
+    @State private var showYearSelector = false
     var body: some View {
         ZStack{
             VStack{
