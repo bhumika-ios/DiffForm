@@ -28,6 +28,7 @@ struct ThirdContentView: View {
                                 .background(Color(UIColor.secondarySystemBackground))
                                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1))
                         }
+                        Text(viewM.agePrompt).font(.caption)
                     }
                     .padding(.vertical,8)
                     Button(action: {
