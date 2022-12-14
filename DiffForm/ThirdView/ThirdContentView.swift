@@ -55,6 +55,12 @@ struct ThirdContentView: View {
                 .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
 //                    Spacer()
             }
+            .disabled(showYearSelector)
+            .padding()
+            // Picker overlay only displayed when year field tapped
+            YearPickerView(birthYear: $viewM.birthYear, showYearSelector: $showYearSelector)
+                .opacity(showYearSelector ? 1 : 0)
+                .animation(.easeIn)
         }
     }
 }
