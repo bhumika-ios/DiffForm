@@ -17,6 +17,7 @@ struct ThirdContentView: View {
                     EntryField(sfSymbolName: "envelope", placeHolder: "Email Address", prompt: <#String#>, field: $viewM.email)
                     EntryField(sfSymbolName: "lock", placeHolder: "Password", prompt: <#String#>,  field: $viewM.password, isSecure: true)
                     EntryField(sfSymbolName: "lock", placeHolder: "Confirm", prompt: <#String#>,  field: $viewM.confirmPw, isSecure: true)
+                    
                 }
             }
         }
@@ -53,6 +54,43 @@ struct EntryField: View {
             Text(prompt)
             .fixedSize(horizontal: false, vertical: true)
             .font(.caption)
+        }
+    }
+}
+struct YearPickerView: View {
+    @Binding var birthYear: Int
+    @Binding var showYearSelector:Bool
+    let currentYear = Calendar.current.dateComponents([.year], from: Date()).year!
+    var body: some View {
+        ZStack {
+            Color(.black).opacity(0.4)
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                VStack {
+                    ScrollView(showsIndicators: false){
+                        VStack(spacing: 10) {
+                            ForEach(((currentYear-100)...currentYear).reversed(), id: \.self) { year in
+                                Button(action: {
+                                    self.birthYear = year
+                                    self.showYearSelector.toggle()
+                                }) {
+                                    Text(String(year))
+                                        .foregroundColor(.primary)
+                                    
+                                }
+                            }
+                        }
+                    }
+                    
+                    .frame(height: 200)
+                }.padding()
+                    .frame(width: 100)
+                    .background(Color(UIColor.secondarySystemBackground))
+                    .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                    .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
+                Spacer()
+            }.padding(.top)
+                .animation(.easeIn)
         }
     }
 }
