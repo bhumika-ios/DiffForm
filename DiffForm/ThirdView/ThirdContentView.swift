@@ -17,7 +17,18 @@ struct ThirdContentView: View {
                     EntryField(sfSymbolName: "envelope", placeHolder: "Email Address", prompt: <#String#>, field: $viewM.email)
                     EntryField(sfSymbolName: "lock", placeHolder: "Password", prompt: <#String#>,  field: $viewM.password, isSecure: true)
                     EntryField(sfSymbolName: "lock", placeHolder: "Confirm", prompt: <#String#>,  field: $viewM.confirmPw, isSecure: true)
-                    
+                    VStack(spacing: 5) {
+                        Button(action: {
+                            // Present Selection
+                            self.showYearSelector.toggle()
+                        }) {
+                            Text(String(viewM.birthYear))
+                                .padding(8)
+                                .foregroundColor(.primary)
+                                .background(Color(UIColor.secondarySystemBackground))
+                                .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1))
+                        }
+                    }
                 }
             }
         }
