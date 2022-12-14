@@ -14,9 +14,9 @@ struct ThirdContentView: View {
         ZStack{
             VStack{
                 VStack{
-                    EntryField(sfSymbolName: "envelope", placeHolder: "Email Address", prompt: <#String#>, field: $viewM.email)
-                    EntryField(sfSymbolName: "lock", placeHolder: "Password", prompt: <#String#>,  field: $viewM.password, isSecure: true)
-                    EntryField(sfSymbolName: "lock", placeHolder: "Confirm", prompt: <#String#>,  field: $viewM.confirmPw, isSecure: true)
+                    EntryField(sfSymbolName: "envelope", placeHolder: "Email Address", prompt: viewM.emailPrompt, field: $viewM.email)
+                    EntryField(sfSymbolName: "lock", placeHolder: "Password", prompt: viewM.passwordPrompt,  field: $viewM.password, isSecure: true)
+                    EntryField(sfSymbolName: "lock", placeHolder: "Confirm", prompt: viewM.confirmPw,  field: $viewM.confirmPw, isSecure: true)
                     VStack(spacing: 5) {
                         Button(action: {
                             // Present Selection
