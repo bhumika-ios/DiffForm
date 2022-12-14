@@ -15,6 +15,8 @@
 		AC1D4123294327A0004DF09B /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D4122294327A0004DF09B /* ButtonFormView.swift */; };
 		AC1D412729432929004DF09B /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D412629432929004DF09B /* FormItem.swift */; };
 		AC1D412B29434B24004DF09B /* FormContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D412A29434B24004DF09B /* FormContentBuilder.swift */; };
+		AC330EC82949B5CA00A8F37C /* ThirdContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC330EC72949B5CA00A8F37C /* ThirdContentView.swift */; };
+		AC330ECA2949B64E00A8F37C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC330EC92949B64E00A8F37C /* ViewModel.swift */; };
 		ACB27990294481C300D32C15 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2798F294481C300D32C15 /* ValidationManager.swift */; };
 		ACB625EB2946FF3300DB85D8 /* FormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB625EA2946FF3300DB85D8 /* FormState.swift */; };
 		ACBB570C293F558800E6E9B9 /* DiffFormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB570B293F558800E6E9B9 /* DiffFormApp.swift */; };
@@ -33,6 +35,8 @@
 		AC1D4122294327A0004DF09B /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		AC1D412629432929004DF09B /* FormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
 		AC1D412A29434B24004DF09B /* FormContentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormContentBuilder.swift; sourceTree = "<group>"; };
+		AC330EC72949B5CA00A8F37C /* ThirdContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdContentView.swift; sourceTree = "<group>"; };
+		AC330EC92949B64E00A8F37C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		ACB2798F294481C300D32C15 /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 		ACB625EA2946FF3300DB85D8 /* FormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormState.swift; sourceTree = "<group>"; };
 		ACBB5708293F558800E6E9B9 /* DiffForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +132,15 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		AC330EC62949B45400A8F37C /* ThirdView */ = {
+			isa = PBXGroup;
+			children = (
+				AC330EC72949B5CA00A8F37C /* ThirdContentView.swift */,
+				AC330EC92949B64E00A8F37C /* ViewModel.swift */,
+			);
+			path = ThirdView;
+			sourceTree = "<group>";
+		};
 		ACB2798E294481AD00D32C15 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +176,7 @@
 		ACBB570A293F558800E6E9B9 /* DiffForm */ = {
 			isa = PBXGroup;
 			children = (
+				AC330EC62949B45400A8F37C /* ThirdView */,
 				AC1D411D294321C7004DF09B /* SecondFormwithValidation */,
 				ACBB570B293F558800E6E9B9 /* DiffFormApp.swift */,
 				ACBB5719293F568F00E6E9B9 /* FirstView.swift */,
@@ -258,7 +272,9 @@
 				AC1D4123294327A0004DF09B /* ButtonFormView.swift in Sources */,
 				ACBB570E293F558800E6E9B9 /* ContentView.swift in Sources */,
 				ACBB571A293F568F00E6E9B9 /* FirstView.swift in Sources */,
+				AC330EC82949B5CA00A8F37C /* ThirdContentView.swift in Sources */,
 				AC1D412129432565004DF09B /* DateFormView.swift in Sources */,
+				AC330ECA2949B64E00A8F37C /* ViewModel.swift in Sources */,
 				AC035B7F294455DB00312B5B /* ValidationError.swift in Sources */,
 				AC1D411F294321FF004DF09B /* TextFieldFormView.swift in Sources */,
 				AC035B792944540F00312B5B /* RegexPatterns.swift in Sources */,

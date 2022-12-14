@@ -38,6 +38,7 @@ final class FormContentBuilderImpl:ObservableObject, FormContentBuilder {
             for validator in component.validations{
                 if let error = validator.validate(component.val as Any){
                     self.state = .fail(error: error)
+                    //print("Please enter form")
                     return
                 }
             }
