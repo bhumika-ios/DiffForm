@@ -11,4 +11,12 @@ class ViewModel: ObservableObject{
     @Published var password = ""
     @Published var confirmPw = ""
     var birthYear: Int = Calendar.current.dateComponents([.year], from: Date()).year!
+    
+    func confirm() {
+        // perform signup functions then clear fields
+        email = ""
+        password = ""
+        confirmPw = ""
+        birthYear = Calendar.current.dateComponents([.year], from: Date()).year!
+    }
 }

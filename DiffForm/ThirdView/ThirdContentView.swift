@@ -29,6 +29,17 @@ struct ThirdContentView: View {
                                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1))
                         }
                     }
+                    .padding(.vertical,8)
+                    Button(action: {
+                        // Create the user
+                        self.viewM.confirm()
+                    }) {
+                        Text("Confirm")
+                            .foregroundColor(.white)
+                            .padding(.vertical, 5)
+                            .padding(.horizontal)
+                            .background(Capsule().fill(Color.blue))
+                    }
                 }
             }
         }
