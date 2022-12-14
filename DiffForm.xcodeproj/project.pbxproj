@@ -23,6 +23,7 @@
 		AC330ED72949D45B00A8F37C /* MultiSelectContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC330ED62949D45B00A8F37C /* MultiSelectContentView.swift */; };
 		AC330ED92949D49F00A8F37C /* MultiSelectionWithCustomEditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC330ED82949D49F00A8F37C /* MultiSelectionWithCustomEditButton.swift */; };
 		AC330EDB2949D50600A8F37C /* MultiSelectionWithCustomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC330EDA2949D50600A8F37C /* MultiSelectionWithCustomRow.swift */; };
+		AC330EDD2949D57A00A8F37C /* MultiSelectionWithEditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC330EDC2949D57A00A8F37C /* MultiSelectionWithEditButton.swift */; };
 		ACB27990294481C300D32C15 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2798F294481C300D32C15 /* ValidationManager.swift */; };
 		ACB625EB2946FF3300DB85D8 /* FormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB625EA2946FF3300DB85D8 /* FormState.swift */; };
 		ACBB570C293F558800E6E9B9 /* DiffFormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB570B293F558800E6E9B9 /* DiffFormApp.swift */; };
@@ -49,6 +50,7 @@
 		AC330ED62949D45B00A8F37C /* MultiSelectContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectContentView.swift; sourceTree = "<group>"; };
 		AC330ED82949D49F00A8F37C /* MultiSelectionWithCustomEditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionWithCustomEditButton.swift; sourceTree = "<group>"; };
 		AC330EDA2949D50600A8F37C /* MultiSelectionWithCustomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionWithCustomRow.swift; sourceTree = "<group>"; };
+		AC330EDC2949D57A00A8F37C /* MultiSelectionWithEditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionWithEditButton.swift; sourceTree = "<group>"; };
 		ACB2798F294481C300D32C15 /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 		ACB625EA2946FF3300DB85D8 /* FormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormState.swift; sourceTree = "<group>"; };
 		ACBB5708293F558800E6E9B9 /* DiffForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +188,7 @@
 				AC330ED62949D45B00A8F37C /* MultiSelectContentView.swift */,
 				AC330ED82949D49F00A8F37C /* MultiSelectionWithCustomEditButton.swift */,
 				AC330EDA2949D50600A8F37C /* MultiSelectionWithCustomRow.swift */,
+				AC330EDC2949D57A00A8F37C /* MultiSelectionWithEditButton.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				AC330EDB2949D50600A8F37C /* MultiSelectionWithCustomRow.swift in Sources */,
 				AC330EC82949B5CA00A8F37C /* ThirdContentView.swift in Sources */,
 				AC1D412129432565004DF09B /* DateFormView.swift in Sources */,
+				AC330EDD2949D57A00A8F37C /* MultiSelectionWithEditButton.swift in Sources */,
 				AC330ECA2949B64E00A8F37C /* ViewModel.swift in Sources */,
 				AC035B7F294455DB00312B5B /* ValidationError.swift in Sources */,
 				AC330ED72949D45B00A8F37C /* MultiSelectContentView.swift in Sources */,
