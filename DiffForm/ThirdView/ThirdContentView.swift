@@ -49,6 +49,11 @@ struct ThirdContentView: View {
                     .opacity(viewM.isConfirmComplete ? 1 : 0.6)
                     .disabled(!viewM.isConfirmComplete)
                 }
+                .padding()
+                .background(Color(UIColor.systemBackground))
+                .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
+//                    Spacer()
             }
         }
     }
