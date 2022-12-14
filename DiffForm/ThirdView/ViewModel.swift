@@ -68,6 +68,7 @@ class ViewModel: ObservableObject{
             return ""
         } else {
             return "Must be between 8 and 15 characters containing at least one number and one capital letter"
+                
         }
     }
     

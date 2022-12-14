@@ -14,9 +14,14 @@ struct ThirdContentView: View {
         ZStack{
             VStack{
                 VStack{
-                    EntryField(sfSymbolName: "envelope", placeHolder: "Email Address", prompt: viewM.emailPrompt, field: $viewM.email)
-                    EntryField(sfSymbolName: "lock", placeHolder: "Password", prompt: viewM.passwordPrompt,  field: $viewM.password, isSecure: true)
-                    EntryField(sfSymbolName: "lock", placeHolder: "Confirm", prompt: viewM.confirmPw,  field: $viewM.confirmPw, isSecure: true)
+                    VStack(alignment: .leading){
+                        EntryField(sfSymbolName: "envelope", placeHolder: "Email Address", field: $viewM.email)
+                        Text(viewM.emailPrompt).font(.caption).foregroundColor(.red)
+                        EntryField(sfSymbolName: "lock", placeHolder: "Password",   field: $viewM.password, isSecure: true)
+                        Text(viewM.passwordPrompt).font(.caption).foregroundColor(.red)
+                        EntryField(sfSymbolName: "lock", placeHolder: "Confirm",   field: $viewM.confirmPw, isSecure: true)
+                        Text(viewM.confirmPwPrompt).font(.caption).foregroundColor(.red)
+                    }
                     VStack(spacing: 5) {
                         Button(action: {
                             // Present Selection
@@ -28,7 +33,7 @@ struct ThirdContentView: View {
                                 .background(Color(UIColor.secondarySystemBackground))
                                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1))
                         }
-                        Text(viewM.agePrompt).font(.caption)
+                        Text(viewM.agePrompt).font(.caption).foregroundColor(.red)
                     }
                     .padding(.vertical,8)
                     Button(action: {
@@ -55,7 +60,7 @@ struct ThirdContentView_Previews: PreviewProvider {
 struct EntryField: View {
     var sfSymbolName: String
     var placeHolder: String
-    var prompt: String
+  //  var prompt: String
     @Binding var field: String
     var isSecure:Bool = false
     var body: some View {
@@ -74,7 +79,7 @@ struct EntryField: View {
             .padding(8)
             .background(Color(UIColor.secondarySystemBackground))
             .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1))
-            Text(prompt)
+          //  Text(prompt)
             .fixedSize(horizontal: false, vertical: true)
             .font(.caption)
         }
