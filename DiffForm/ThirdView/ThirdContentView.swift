@@ -46,6 +46,8 @@ struct ThirdContentView: View {
                             .padding(.horizontal)
                             .background(Capsule().fill(Color.blue))
                     }
+                    .opacity(viewM.isConfirmComplete ? 1 : 0.6)
+                    .disabled(!viewM.isConfirmComplete)
                 }
             }
         }
