@@ -11,7 +11,8 @@ import SwiftUI
 struct DiffFormApp: App {
     var body: some Scene {
         WindowGroup {
-           ThirdContentView()
+           //ThirdContentView()
+            MultiSelectionWithEditModeDemoView()
         }
     }
 }
