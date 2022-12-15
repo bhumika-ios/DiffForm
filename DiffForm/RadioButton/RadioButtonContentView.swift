@@ -26,6 +26,7 @@ struct RadioButtonContentView: View {
                         .symbolVariant(isSelected ? .fill : .none)
                 }
                
+               
             }
             Group{
                 Toggle(isOn: $isSelected){
@@ -34,6 +35,12 @@ struct RadioButtonContentView: View {
                 }
                 // as button work
                 .toggleStyle(.button)
+            }
+            Group{
+                Toggle("", isOn: $isSelected)
+                    .labelsHidden()
+                    .toggleStyle(ToggleCheckboxstyle())
+                    .font(.title)
             }
         }
     }
