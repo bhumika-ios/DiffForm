@@ -19,7 +19,7 @@ struct CheckBoxContentView: View {
         VStack{
             List($tasks) { $task in
                 HStack{
-                    Image(systemName: "square")
+                    Image(systemName: task.isCompleted ? "checkmark.square" : "square")
                         .onTapGesture {
                             task.isCompleted.toggle()
                         }
