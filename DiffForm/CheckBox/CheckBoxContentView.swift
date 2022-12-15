@@ -18,14 +18,10 @@ struct CheckBoxContentView: View {
     var body: some View {
         VStack{
             List($tasks) { $task in
-                HStack{
-                    Image(systemName: task.isCompleted ? "checkmark.square" : "square")
-                        .onTapGesture {
-                            task.isCompleted.toggle()
-                        }
-                    Text(task.name)
-                }
+               TaskCellView(task: $task)
+                
             }
+            
         }
     }
 }
@@ -33,5 +29,18 @@ struct CheckBoxContentView: View {
 struct CheckBoxContentView_Previews: PreviewProvider {
     static var previews: some View {
         CheckBoxContentView()
+    }
+}
+
+struct TaskCellView: View{
+    @Binding var task: Task
+    var body: some View{
+        HStack{
+            Image(systemName: task.isCompleted ? "checkmark.square" : "square")
+                .onTapGesture {
+                    task.isCompleted.toggle()
+                }
+            Text(task.name)
+        }
     }
 }
