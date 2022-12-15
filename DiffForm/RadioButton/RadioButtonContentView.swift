@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct RadioButtonContentView: View {
+    @State private var isSelected: Bool = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Group{
+                Toggle(isOn: $isSelected){
+                    Label(isSelected ? "Is On" : "Is Off", systemImage: "lightbulb")
+                        .symbolVariant(isSelected ? .fill : .none)
+                }
+            }
+        }
     }
 }
 
