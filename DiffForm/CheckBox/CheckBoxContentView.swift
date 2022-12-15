@@ -14,7 +14,7 @@ struct Task: Identifiable{
 }
 
 struct CheckBoxContentView: View {
-    
+    @State private var tasks = [Task(name: "Computer bye", isCompleted: false),Task(name: "set sound", isCompleted: false)]
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
