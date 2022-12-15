@@ -16,6 +16,15 @@ struct RadioButtonContentView: View {
                     Label(isSelected ? "Is On" : "Is Off", systemImage: "lightbulb")
                         .symbolVariant(isSelected ? .fill : .none)
                 }
+               
+            }
+            Group{
+                Toggle(isOn: $isSelected){
+                    Label(isSelected ? "Is On" : "Is Off", systemImage: "lightbulb")
+                        .symbolVariant(isSelected ? .fill : .none)
+                }
+                // as button work
+                .toggleStyle(.button)
             }
         }
     }
