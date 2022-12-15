@@ -21,7 +21,7 @@ struct CheckBoxContentView: View {
                TaskCellView(task: $task)
                 
             }
-            
+            Text("Completed tasks count: \(tasks.filter{ $0.isCompleted }.count)")
         }
     }
 }
