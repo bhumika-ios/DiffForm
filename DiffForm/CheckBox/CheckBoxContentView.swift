@@ -7,7 +7,14 @@
 
 import SwiftUI
 
+struct Task: Identifiable{
+    let id = UUID()
+    let name: String
+    var isCompleted: Bool
+}
+
 struct CheckBoxContentView: View {
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
